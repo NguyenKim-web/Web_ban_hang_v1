@@ -276,7 +276,6 @@ ul.menu-item li{
 }
 .description .desc-top{
     margin-bottom: 30px;
-
 }.description .desc-top p{
     border-top: 1px solid #000;
     position: relative;
@@ -333,6 +332,7 @@ ul.menu-item li{
 .product-bottom{
     padding-bottom: 60px;
 }
+
 /*----------- footer----------- */
 footer .body{
     display: grid;
@@ -355,7 +355,6 @@ footer .body .contact{
    font-weight: 600;
    padding: 50px 0 20px;
 }
-
 footer .body input{
     width: 40%;
     height: 30px;
@@ -381,7 +380,6 @@ footer .body .contact ul li img{
 footer .body .copyright{
     padding: 20px 0 10px;
 }
-
 footer .title{
     text-align: center;
 }
