@@ -126,42 +126,42 @@ ul.menu-item li{
     object-fit: cover;
     top: 3px;
 }
-/* --------cart content------- */
+/* --------payment content------- */
 /* comment */
-.cart-body{
+.payment-body{
     padding: 60px 0;
     border-bottom: 3px solid black;
 }
-.cart-content{
+.payment-content{
     display: flex;
     justify-content: space-between;
     
 }
 .vnd{
-    /* vertical-align: super; */
+    
     position: relative;
 }.vnd::after{
-    /* vertical-align: super; */
+   
     content: "vnd";
     position: absolute;
-    top: -90%;
+    top: -50%;
 }
-/* cart content ->top */
-.cart-top-progress{
+/* payment content ->top */
+.payment-top-progress{
     width: 70%;
     display: flex;
     justify-content: space-between;
     margin: 0px auto 40px;
     position: relative;
-}.cart-top-progress .progress{
-    width: 0%;
+}.payment-top-progress .progress{
+    width: 100%;
     height: 2px;
     background-color: #3d7ad5;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-.cart-top-progress p{
+.payment-top-progress p{
     width: 30px;
     height: 30px;
     background-color: #fff;
@@ -171,7 +171,7 @@ ul.menu-item li{
     text-align: center;
     z-index: 1;
 }
-.cart-top-progress::before{
+.payment-top-progress::before{
     content: "";
     width: 100%;
     height: 2px;
@@ -179,126 +179,144 @@ ul.menu-item li{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}.cart-top-progress p.active{
+}.payment-top-progress p.active{
     border: 2px solid #92a1f4;
     background-color: rgb(170, 221, 238);
 }
 
-.cart-top-progress img{
+.payment-top-progress img{
     height: 15px;
 }
 
-/* cart content ->left table */
-.product-detail-info{
-    width: 67%;
-    padding: 10px;
-}
-.product-detail-info{
-    width: 67%;
-    padding: 10px;
-}
-
-
-.left-table th, .left-table td{
-    border-bottom: 2px solid #bbb8b8;
-    text-align: center;
-    padding: 8px;
-    vertical-align: middle;
-   
-}
-
-.product-img-column,
-.product-name-column,
-.product-color-column{
-    width: 20%;
-}
-.product-size-column,
-.product-amount-column,
-.product-price-column,
-.delete-product-column{
-    width: 10%;
-}
-.left-table .image-column img{
-    width: 100%;
-    object-fit: cover;
-    display: block;    
-
-}.left-table .info-column{
-    font-size: 1.2rem;
-    text-align: center;
- 
-}.left-table .color-column div{
-    width: 30px;
+/* payment content ->left content */
+.bank_icon{
     height: 30px;
-    background-color: #0e0e0e;
-    margin: auto;
-}.left-table .amount-column input{
-    width: 30px;
-    height: 20px;
-  
-}.left-table .price-column{
+}
+.payment-detail-info{
+    width: 55%;
+    padding-right: 30px;
+}.payment-detail-info .title1{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 20px 0;
+}.payment-detail-info .desc1{
     font-size: 1.2rem;
-
-}.left-table .cancel-column p{
-    border: 1px solid #000;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    margin: auto;
-    border-radius: 4px;
+}.payment-detail-info .desc2{
+    margin: 20px 0;
+}.payment-detail-info input{
+    margin: 8px 0;
 }
 
-/* cart content ->right column */
-.price-count{ 
-    width: 30%;
-    border-left: 1px solid #000;
-    padding: 10px;
-    font-size: 1.2rem;
-}
-.price-count .title{ 
-    margin-bottom: 20px;
-    text-align: center;
-}
-.price-count table{ 
-    width: 100%;
-}.price-count table tbody{ 
-    border-top: 1px solid #b0adad;
-    border-bottom: 1px solid #b0adad;
-}.price-count table td{ 
-    padding: 8px;
-}.price-count table td:last-child{ 
-    text-align: right;
-}
-.price-count .freeship-desc{ 
-    margin-top: 20px;
-    text-align: center;
+.img-group .sub-img{
+    border: 1px solid black;
+    display: inline-flex;
+}.img-group p{
+    display: inline;
     line-height: 1.5;
 }
-.price-count .freeship-desc p:last-child{ 
-    margin-top: 20px;
-    color: red;
-    padding-bottom: 5px ;
+
+/* payment content ->right content */
+
+.payment-price{
+    width: 45%;
+    border-left: 1px solid rgb(173, 171, 171);
+    padding: 20px;
 }
-.price-count .btn-cash { 
-    text-align: center;
-    margin-bottom: 30px;
-}.price-count .btn-cash .btn{ 
+.discount-payment table input{
+    width: 100%;
     height: 30px;
-    background-color: #fff;
-    padding: 0 10px;
-    text-align: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-}.price-count .btn-cash .btn:last-child{ 
-    color: #fff;
-    background-color: #000;
 }
-.price-count .login-desc p{
-   padding: 5px 0 0 5px;
-}.price-count .login-desc a{
-   color: orange;
+.discount-payment table button{
+    width: 40%;
+    height: 30px;
+    background-color: black;
+    color: #fff;
+}
+.discount-payment table{
+    width: 100%;
+    text-align: center;
+}.discount-payment table td:not(:last-child){
+    
+    width: 50%;
+    padding: 10px 0;
+    
+}.discount-payment table td{
+    border-bottom: 1px solid #ddd;
+    width: 50%;
+
+    
+}
+::-ms-input-placeholder { /* Edge 12-18 */
+    padding-left: 10px;
+  }
+  
+::placeholder {
+    padding-left: 10px;
+}
+.select-employee-type{
+   padding: 30px 0 12px;
+   border-bottom: 1px solid #ddd;
 }
 
+#select-table{
+    width: 100%;
+    height: 30px;
+}
+
+/* .right-container -> bottom table */
+.payment-price-table table{
+    width: 100%;
+}.payment-price-table table .product-amount{
+    width: 10%;
+}.payment-price-table table .product-price{
+    width: 20%;
+}.payment-price-table table tbody td,
+thead th{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 8px;
+    border-bottom: 1px solid #9f9d9d;
+}
+.payment-price-table table th{
+    text-align: left;
+
+}.payment-price-table table th:not(:first-child){
+    text-align: center;
+}.payment-price-table table td:not(:first-child){
+    text-align: center;
+    vertical-align: middle;
+}.payment-price-table table td:last-child,
+.payment-price-table table  th:last-child{
+    text-align: right;
+    vertical-align: middle;
+}.payment-price-table table tfoot td{
+    padding: 8px;
+    font-weight: 600;
+}
+
+.content-bottom{
+    padding-top: 40px;
+    cursor: pointer;
+}
+.back-arrow svg{
+    height: 10px;
+}.back-arrow svg,
+.back-arrow a{
+    color: orange;
+}
+.content-bottom button{
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 15%;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.vnd1{
+    top: -50%;
+    vertical-align: super;
+    line-height: 0;
+}
 /*----------- footer----------- */
 footer .body{
     display: grid;
